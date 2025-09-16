@@ -1,5 +1,6 @@
 import React from 'react';
 import aibotlogo from '/doctor-list/ai-chatbot-logo.png'
+import ChatBot from './Chatbot';
 const Dashboard = ({ username }) => {
   return (
     <div className="h-screen flex flex-col bg-[#002928] text-white">
@@ -14,11 +15,11 @@ const Dashboard = ({ username }) => {
       {/* Main Scrollable Content */}
       <div className="flex-1 overflow-y-auto px-6 py-6">
         {/* Chatbot Section */}
-        <div className="bg-white rounded-md shadow-md p-6 h-full min-h-[300px]">
-          <div className='flex items-center'><img className='w-20 h-20' src={aibotlogo} alt="" />
+        <div className="bg-white rounded-md shadow-md pt-2 h-full min-h-[300px]">
+          <div className='flex items-centerv h-8 pl-5 '><img className='w-12 h-12' src={aibotlogo} alt="" />
             <h2 className="text-xl font-bold text-black mb-4">Chatbot</h2> </div>
-          <div className="bg-gray-100 rounded-md p-4 text-black h-[20rem]">
-            Chatbot Interface Here
+          <div className="bg-gray-100 rounded-md  text-black h-[20rem]">
+            <ChatBot/>
           </div>
         </div>
       </div>

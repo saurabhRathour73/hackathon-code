@@ -9,12 +9,12 @@ import FooterSection from './pages/FooterSectoin'
 const MainHeroSection = () => {
   return (
     <div>
-        <Navbar/>
-      <HeroSection/>
-      <Services/>
-      <WhyUs/>
-      <FeaturesSection/>
-      <FooterSection/>
+      <Navbar />
+      <HeroSection />
+      <Services />
+      <WhyUs />
+      <FeaturesSection />
+      <FooterSection />
     </div>
   )
 }

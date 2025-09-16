@@ -85,7 +85,8 @@ const AppointmentSection = () => {
       </div>
 
       {/* Form Section (React Hook Form) */}
-      <form
+     <div>
+       <form
         onSubmit={handleSubmit(onSubmit)}
         className="max-w-2xl mx-auto bg-[#003b38] p-6 rounded-lg shadow-md space-y-5"
       >
@@ -127,6 +128,7 @@ const AppointmentSection = () => {
           </button>
         </div>
       </form>
+     </div>
 
       {/* Appointment Summary Card */}
       {appointmentSubmitted && appointmentData && (
