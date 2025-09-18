@@ -1,22 +1,20 @@
 import { useState } from "react";
 import {
-  Home,
-  MessageSquare,
+  Grid,             // New Dashboard icon
+  CalendarCheck,    // New Appointment icon
   Users,
-  Settings,
   Moon,
   LogOut,
-  Menu
+  Menu,
+  BookOpen          // Resource Hub icon
 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
-
 
 export default function Sidebar() {
   const [open, setOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
   const navigate = useNavigate();
-
 
   return (
     <div
@@ -39,24 +37,28 @@ export default function Sidebar() {
         </div>
 
         <ul className="mt-8 space-y-5">
+          {/* Dashboard */}
           <li onClick={() => navigate("/app/dashboard")} className="flex items-center gap-3 cursor-pointer hover:text-[#feb05d]">
-            <Home size={20} />
+            <Grid size={20} />
             {open && <Link>Dashboard</Link>}
           </li>
 
+          {/* Booking Appointment */}
           <li onClick={() => navigate("/app/appointment")} className="flex items-center gap-3 cursor-pointer relative hover:text-[#feb05d]">
-            <MessageSquare size={20} />
-            {open && <Link >Booking Appointment</Link>}
+            <CalendarCheck size={20} />
+            {open && <Link>Booking Appointment</Link>}
           </li>
 
+          {/* Users */}
           <li onClick={() => navigate("/app/userProfile")} className="flex items-center gap-3 cursor-pointer hover:text-[#feb05d]">
             <Users size={20} />
             {open && <span>Users</span>}
           </li>
 
-          <li className="flex items-center gap-3 cursor-pointer hover:text-[#feb05d]">
-            <Settings size={20} />
-            {open && <span>Settings</span>}
+          {/* Resource Hub */}
+          <li onClick={() => navigate("/app/resourcehub")} className="flex items-center gap-3 cursor-pointer hover:text-[#feb05d]">
+            <BookOpen size={20} />
+            {open && <span>Resource Hub</span>}
           </li>
         </ul>
       </div>
@@ -86,7 +88,6 @@ export default function Sidebar() {
         <div onClick={() => {
           navigate('/')
           toast.success('Logout successfully!');
-
         }} className="flex items-center gap-3 cursor-pointer hover:text-red-500">
           <LogOut size={20} />
           {open && <span>Logout</span>}

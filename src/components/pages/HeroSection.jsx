@@ -1,16 +1,19 @@
 // HeroSection.jsx
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 
 const HeroSection = () => {
   const Navigate = useNavigate()
+  const { t } = useTranslation()
   return (
-    <section id="home" className="bg-[#002928] text-white flex flex-col md:flex-row w-full h-screen px-6 md:px-20 pt-10 md:pt-20 overflow-hidden">
+    <section  className="bg-[#002928] text-white flex flex-col md:flex-row w-full h-screen px-6 md:px-20 pt-10 md:pt-20 overflow-hidden">
       
       {/* Text Section */}
       <div className="flex-1 flex flex-col justify-center items-start space-y-6 z-10 ">
         <h1 className="text-[2.5rem] md:text-[4rem] font-medium leading-tight">
-          “Every Step Towards Healing Matters.”
+         {t(' “Every Step Towards Healing Matters.”')}
         </h1>
         <p className="text-gray-300 text-lg md:text-xl mt-4 md:mt-6 max-w-md">
           Navigate your wellness journey with expert insights for support,

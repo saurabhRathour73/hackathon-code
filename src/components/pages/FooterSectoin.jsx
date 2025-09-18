@@ -10,7 +10,7 @@ import {
 
 const FooterSection = () => {
     return (
-        <footer id="footer" className="bg-[#002822] text-white  py-10 px-6 md:px-20 rounded-t-3xl">
+        <footer  className="bg-[#002822] text-white  py-10 px-6 md:px-20 rounded-t-3xl">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-10">
                 {/* Left Section */}
                 <div className="md:w-1/2 space-y-6">

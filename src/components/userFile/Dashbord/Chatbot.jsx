@@ -67,7 +67,7 @@ const ChatBot = () => {
             <div className="flex gap-2">
                 <input
                     type="text"
-                    className="flex-grow border text-white rounded px-3 py-2"
+                    className="flex-grow border bg-black text-white rounded px-3 py-2"
                     placeholder="Type your message..."
                     value={input}
                     onChange={(e) => setInput(e.target.value)}

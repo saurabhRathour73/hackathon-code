@@ -25,7 +25,7 @@ const features = [
 
 const WhyUs = () => {
   return (
-    <div id="AboutUs" className="py-10 px-6 md:px-16 lg:px-24 bg-white text-gray-800">
+    <div  className="py-10 px-6 md:px-16 lg:px-24 bg-white text-gray-800">
       <h2 className="text-3xl md:text-4xl font-semibold text-[#0d2b36] mb-10">
         <span className="border-b-4 border-orange-400 pb-1">Why us?</span>
       </h2>

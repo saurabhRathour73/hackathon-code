@@ -2,10 +2,10 @@ import React from 'react';
 
 const UserProfile = () => {
   const user = {
-    name: "Saurabh Kumar",
-    email: "saurabhs4343@gmail.com",
-    image: "https://randomuser.me/api/portraits/men/75.jpg",
-    contact: "+91 7321841202",
+    name: "Vanshika singh",
+    email: "Vanshika4343@gmail.com",
+    image: "https://tse3.mm.bing.net/th/id/OIP.65cr4DZsNGAvYWUr6Rg5qQHaHa?pid=Api&P=0&h=180",
+    contact: "+91 7xxxxxxxx",
     problem: "Anxiety Disorder",
     appointment: {
       doctorName: "Dr. Priya Sharma",
